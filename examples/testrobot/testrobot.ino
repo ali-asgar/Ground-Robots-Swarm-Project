@@ -109,7 +109,7 @@ void loop() {
     radius = 8000;
     s2 = 25;
     
-    if(enc1 > radius)  {
+    if(enc1 <= radius)  {
        roboclaw.ForwardM1(address,s1);    
        roboclaw.ForwardM2(address,s2);
     }
