@@ -109,11 +109,15 @@ void loop() {
     radius = 8000;
     s1 = 25;
     
-    if(enc1 <= radius)  {
-       roboclaw.ForwardM1(address,s1);    
-       roboclaw.ForwardM2(address,s2);
+    if(enc1 <= theta) {
+        roboclaw.BackwardM1(address,s1);
+        roboclaw.ForwardM2(address,s2);
     }
-    if(enc1 > radius)  {
+    if(enc1 > theta && enc1 <= (radius+theta))  {
+       roboclaw.ForwardM1(address,s2);
+       roboclaw.ForwardM2(address,s1);
+    }
+    if(enc1 > (radius+theta))  {
       roboclaw.ForwardM1(address,0);
       roboclaw.ForwardM2(address,0);
     }
