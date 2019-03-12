@@ -25,8 +25,8 @@
  *         Control using packet serial mode with a specific address for 
  *         networking several motor controllers together.
  *               
- * Purpose of this file: to move the robot in a square
- * Program 5
+ * Purpose of this file: to move the robot in an Octagon
+ * Program 6
  * 
  */
 
@@ -106,9 +106,8 @@ void loop() {
     //Serial.println(arc,DEC);
    
     // Hard coding values of variables for purpose of testing
-    radius = 8000;
+    radius = 2000;
     s1 = 25;
-    theta = 91*13.0;
     
     if(enc1 <= theta) {
         roboclaw.BackwardM1(address,s1);
@@ -118,7 +117,7 @@ void loop() {
        roboclaw.ForwardM1(address,s1);
        roboclaw.ForwardM2(address,s2);
     }  
-    for(i = 1; i <= 3; i++) {
+    for(i = 1; i <= 7; i++) {
         if(enc1 > (i*theta + i*radius) && enc1 <= ((i+1)*theta + i*radius)) { //Rotation logic
             roboclaw.BackwardM1(address,s1);
             roboclaw.ForwardM2(address,s2);
@@ -129,7 +128,7 @@ void loop() {
             roboclaw.ForwardM2(address,s2);
             displayspeed();
         }
-        theta = theta + (i*13);  
+        //theta = theta + (i*13)/3;  Use incase of accuracy error
     }
     if(enc1 > (i*theta + i*radius)) {
         roboclaw.ForwardM1(address,0);
