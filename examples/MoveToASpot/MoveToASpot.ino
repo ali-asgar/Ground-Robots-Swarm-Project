@@ -26,7 +26,7 @@
  *         networking several motor controllers together.
  *               
  * Purpose of this file: to move the robot in a straight line
- * Software Architecture:
+ * Program 3
  * 
  */
 
