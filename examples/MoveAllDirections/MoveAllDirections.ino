@@ -25,8 +25,8 @@
  *         Control using packet serial mode with a specific address for 
  *         networking several motor controllers together.
  *               
- * Purpose of this file: to move the robot forward and stop
- * Program 1
+ * Purpose of this file: to move the robot in All Directions
+ * Program 2
  * 
  */
 
