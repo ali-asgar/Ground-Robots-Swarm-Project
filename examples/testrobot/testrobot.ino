@@ -5,6 +5,7 @@
  *
  * Program Name: testrobot.ino
  * Author: Ali Asgar Tashrifwala
+ * Date: 03/12/2019
  *
  * Things to note:
  *
@@ -26,7 +27,7 @@
  *         networking several motor controllers together.
  *               
  * Purpose of this file: to move the robot in a straight line
- * Software Architecture:
+ * Program 0
  * 
  */
 

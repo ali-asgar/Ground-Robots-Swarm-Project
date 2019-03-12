@@ -3,8 +3,9 @@
  *
  * Project: RoboClaw ST 2x45A Motor Controller with Prowler Robot and Arduino Uno
  *
- * Program Name: testrobot.ino
+ * Program Name: MoveInCircle.ino
  * Author: Ali Asgar Tashrifwala
+ * Date: 03/12/2019
  *
  * Things to note:
  *
