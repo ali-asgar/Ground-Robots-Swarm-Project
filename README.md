@@ -48,8 +48,13 @@ A [Motor Controller](https://www.robotshop.com/community/tutorials/show/basics-w
 A [motor controller](https://en.wikipedia.org/wiki/Motor_controller) might include a manual or automatic means for starting and stopping the motor, selecting forward or reverse rotation, selecting and regulating the speed, regulating or limiting the torque, and protecting against overloads and faults.
 
 RoboClaw is the name of the motor controller series made by [BasicMicro](http://www.basicmicro.com/). The Model which we are using is RoboClaw ST 2x45A Motor Controller.
+![image](https://user-images.githubusercontent.com/15716059/62594818-f28fb980-b8a9-11e9-9197-c5db8776cc92.png)
 
 ### Setup
 Connect the RoboClaw ST 2x45A with the computer (Windows) with USB to micro USB cable. From the power supply give 12V DC at the positive and negative terminal of the RoboClaw ST 2x45A. You will see the board in the attached devices section.
+
+Click on Connect Selected Unit.
+
+
 
 - Packet Serial Mode - It can transmit and receive serial data, UART
