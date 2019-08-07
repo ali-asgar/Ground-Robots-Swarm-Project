@@ -14,13 +14,11 @@ Clone this repository to your **/Documents/Arduino/libraries** folder
 
 ### Hardware List 
 
-Prowler Robot
-- [Prowler Robot Kit] (https://www.servocity.com/prowler)
-- [Prowler Robot Assembly video Tutorial](https://www.youtube.com/watch?v=k7ZXSDlREJM)
+[**Prowler Robot** Kit](https://www.servocity.com/prowler)
+[Prowler Robot Assembly video Tutorial](https://www.youtube.com/watch?v=k7ZXSDlREJM)
 
-Nomad Robot
-- [Nomad Robot Kit] (https://www.servocity.com/nomad)
-- [Nomad Robot Assembly video Tutorial](https://www.youtube.com/watch?v=FAPDkyeAek8)
+[**Nomad Robot** Kit](https://www.servocity.com/nomad)
+[Nomad Robot Assembly video Tutorial](https://www.youtube.com/watch?v=FAPDkyeAek8)
 
 [313 RPM HD Premium Planetary Gear Motor w/Encoder](https://www.servocity.com/313-rpm-hd-premium-planetary-gear-motor-w-encoder)
 
