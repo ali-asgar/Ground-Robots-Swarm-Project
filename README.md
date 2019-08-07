@@ -25,3 +25,5 @@ Clone this repository to your **/Documents/Arduino/libraries** folder
 - [Arduino Uno](https://store.arduino.cc/usa/arduino-uno-rev3)
 
 - [RoboClaw ST 2x45A Motor Controller](http://www.basicmicro.com/RoboClaw-ST-2x45A-Motor-Controller_p_27.html)
+
+- [12 AWG Copper Wire](https://www.amazon.com/gp/product/B01AQU3ST8)
