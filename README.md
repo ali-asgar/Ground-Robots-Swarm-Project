@@ -75,6 +75,9 @@ Go to file and save it.
 
 Change the mode to Packet Serial on Roboclaw:
 
+- Function: Packet Serial     Mode - Address 0x80				Mode: 7
+- Description: It can transmit and receive serial data, UART
+
 The 3 buttons on RoboClaw are used to set the different configuration options. The MODE button sets the interface method such as Serial or RC modes. The SET button is used to configure the options for the mode. The LIPO button doubles as a save button and configuring the low battery voltage cut out function of RoboClaw. To set the desired mode follow the steps below. 
 
 ![image](https://user-images.githubusercontent.com/15716059/62595001-95e0ce80-b8aa-11e9-94c4-09566fadb32c.png)
@@ -83,8 +86,10 @@ The 3 buttons on RoboClaw are used to set the different configuration options. T
 2. Press SET to increment to the next mode. Press MODE to decrement to the previous mode. 
 3. Press and release the LIPO button to save this mode to memory.
 
-Description:
-- Function: Packet Serial Mode - Address 0x80				Mode: 7
-- Description: Control using packet serial mode with a specific address for networking several motor controllers together.
-- Packet Serial Mode - It can transmit and receive serial data, UART.
+### Instructions for Arduino Uno
 
+-	Clone this repository to your **/Documents/Arduino/libraries** folder. 
+- Also, you can download this repository, unzip the file and copy it in /Documents/Arduino/libraries folder.
+-	Start Arduino IDE (Restart Arduino IDE if already open)
+-	Connect Arduino Uno with computer (or Raspberry Pi if you are using it)
+-	Go to File -> Examples -> Examples from custom libraries -> Ground-Robots-Swarm-Project ->testrobot
