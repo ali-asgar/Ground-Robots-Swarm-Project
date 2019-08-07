@@ -93,3 +93,15 @@ The 3 buttons on RoboClaw are used to set the different configuration options. T
 -	Start Arduino IDE (Restart Arduino IDE if already open)
 -	Connect Arduino Uno with computer (or Raspberry Pi if you are using it)
 -	Go to File -> Examples -> Examples from custom libraries -> Ground-Robots-Swarm-Project ->testrobot
+
+![image](https://user-images.githubusercontent.com/15716059/62595420-48fdf780-b8ac-11e9-95a3-4a82019519fd.png)
+
+![image](https://user-images.githubusercontent.com/15716059/62595449-6fbc2e00-b8ac-11e9-8a52-4c8c75ed0af4.png)
+ Go to Tools -> Board -> “Arduino/Genuino Uno”
+
+![image](https://user-images.githubusercontent.com/15716059/62595455-79de2c80-b8ac-11e9-9fd5-c7fb448c42e0.png) Go to Port -> Select port with Arduino/Genuino Uno
+
+-	Make changes if necessary, verify and upload the sketch.
+-	Open serial monitor and set baud rate to 9600
+
+![image](https://user-images.githubusercontent.com/15716059/62595505-94180a80-b8ac-11e9-9751-4e20e3ff3a70.png)
