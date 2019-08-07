@@ -105,4 +105,16 @@ Make changes if necessary, verify and upload the sketch.
 
 ## The Example codes
 
+**Required Information**
+Encoder values - 
+When the tire completes 1 rotation, we see this value on the software.
+Countable Events Per Revolution (Output Shaft) - 1,288.848
 
+When the tire completes 1 rotation, the encoder rotates these many times.
+Encoder: Cycles Per Revolution (Output Shaft) - 322.212
+
+Therefore, 1 cycle of Encoder = 4 Events on software
+322.212 cycles of Encoder = (4 x 322.212) 1288.848 Events on software
+
+The circumference of tire = Pi x Tire Diameter = 3.14 x 5.4 inch = 16.956 inches ≈ 17 inches
+Therefore, 17 inches = 1288 events
