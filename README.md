@@ -36,6 +36,7 @@ Clone this repository to your **/Documents/Arduino/libraries** folder
 - Roboclaw 2B  		to  		Motor 1 Channel B
 - Roboclaw Gnd  	to  		Motor 1 Gnd
 
+Packet Serial Mode - It can transmit and receive serial data, UART. 
 The Motor + and Motor - pins of the 6-pin JST connector are not used because the wires are not thick enough. 
 Instead 12 AWG Copper Wires are soldered on the Motors.
 
@@ -48,13 +49,36 @@ A [Motor Controller](https://www.robotshop.com/community/tutorials/show/basics-w
 A [motor controller](https://en.wikipedia.org/wiki/Motor_controller) might include a manual or automatic means for starting and stopping the motor, selecting forward or reverse rotation, selecting and regulating the speed, regulating or limiting the torque, and protecting against overloads and faults.
 
 RoboClaw is the name of the motor controller series made by [BasicMicro](http://www.basicmicro.com/). The Model which we are using is RoboClaw ST 2x45A Motor Controller.
+
 ![image](https://user-images.githubusercontent.com/15716059/62594818-f28fb980-b8a9-11e9-9197-c5db8776cc92.png)
 
 ### Setup
 Connect the RoboClaw ST 2x45A with the computer (Windows) with USB to micro USB cable. From the power supply give 12V DC at the positive and negative terminal of the RoboClaw ST 2x45A. You will see the board in the attached devices section.
 
+![image](https://user-images.githubusercontent.com/15716059/62594839-0cc99780-b8aa-11e9-8fb5-e19b41539b4b.png)
 Click on Connect Selected Unit.
 
+![image](https://user-images.githubusercontent.com/15716059/62594861-1eab3a80-b8aa-11e9-906b-fc244374243b.png)
+
+The RoboClaw ST 2x45A gets connected to the BasicMicro Motion Studio.
+We can see that all the parameter are GREEN in color which means everything is good. We can also see the current temperature, encoder, speed, battery level and version in the top section.
+We can also see different settings such as General, PWM, velocity and Position settings on the left side.
+
+In the Studio, go to General Settings, and change the following:
+
+-	Control Mode: Packet Serial
+-	PWM Mode: Locked Antiphase
+-	Serial, Baudrate: 9600
+
+Go to file and save it.
+
+Change the mode to Packet Serial on Roboclaw:
+
+The 3 buttons on RoboClaw are used to set the different configuration options. The MODE button sets the interface method such as Serial or RC modes. The SET button is used to configure the options for the mode. The LIPO button doubles as a save button and configuring the low battery voltage cut out function of RoboClaw. To set the desired mode follow the steps below. 
+
+1. Press and release the MODE button to enter mode setup. The STAT2 LED will begin to blink out the current mode. Each blink is a half second with a long pause at the end of the count. Five blinks with a long pause equals mode 5 and so on. 
+2. Press SET to increment to the next mode. Press MODE to decrement to the previous mode. 
+3. Press and release the LIPO button to save this mode to memory.
 
 
-- Packet Serial Mode - It can transmit and receive serial data, UART
+
