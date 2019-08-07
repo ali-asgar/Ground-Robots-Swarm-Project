@@ -6,7 +6,7 @@ NOTE: Whenever connecting the Roboclaw, it is necessary to give the serial port 
 `sudo chmod 666 /dev/ttyUSB0 /dev/ttyACM0`
 
 ## Setting up prerequisites
-Clone this repository to your **/Documents/Arduino/libraries** folder
+Clone this repository to your **/Documents/Arduino/libraries** folder.
 
 ### Hardware Requirements 
 - [**Prowler Robot** Kit](https://www.servocity.com/prowler)
@@ -47,9 +47,9 @@ A [Motor Controller](https://www.robotshop.com/community/tutorials/show/basics-w
 
 A [motor controller](https://en.wikipedia.org/wiki/Motor_controller) might include a manual or automatic means for starting and stopping the motor, selecting forward or reverse rotation, selecting and regulating the speed, regulating or limiting the torque, and protecting against overloads and faults.
 
-RoboClaw is the name of the motor controller series made by [BasicMicro](http://www.basicmicro.com/). The Model which we are using is **RoboClaw ST 2x45A Motor Controller**.
+RoboClaw is the name of the motor controller series made by [BasicMicro](http://www.basicmicro.com/). The Model which we are using is **RoboClaw ST 2x45A Motor Controller**. [Documentation and Resources.](https://www.basicmicro.com/downloads)
 
-![image](https://user-images.githubusercontent.com/15716059/62594818-f28fb980-b8a9-11e9-9197-c5db8776cc92.png) [Documentation and Resources](https://www.basicmicro.com/downloads)
+![image](https://user-images.githubusercontent.com/15716059/62594818-f28fb980-b8a9-11e9-9197-c5db8776cc92.png)
 
 ### Setup
 Connect the RoboClaw ST 2x45A with the computer (Windows) with USB to micro USB cable. From the power supply give 12V DC at the positive and negative terminal of the RoboClaw ST 2x45A. You will see the board in the attached devices section.
@@ -90,17 +90,17 @@ The 3 buttons on RoboClaw are used to set the different configuration options. T
 
 -	Clone this repository to your **/Documents/Arduino/libraries** folder. 
 - Also, you can download this repository, unzip the file and copy it in /Documents/Arduino/libraries folder.
--	Start Arduino IDE (Restart Arduino IDE if already open)
--	Connect Arduino Uno with computer (or Raspberry Pi if you are using it)
--	Go to File -> Examples -> Examples from custom libraries -> Ground-Robots-Swarm-Project ->testrobot
+-	Start Arduino IDE (Restart Arduino IDE if already open.)
+-	Connect Arduino Uno with computer (or Raspberry Pi if you are using it.)
+-	Go to File -> Examples -> Examples from custom libraries -> Ground-Robots-Swarm-Project ->testrobot.
 
 ![image](https://user-images.githubusercontent.com/15716059/62595420-48fdf780-b8ac-11e9-95a3-4a82019519fd.png)
 
 ![image](https://user-images.githubusercontent.com/15716059/62595449-6fbc2e00-b8ac-11e9-8a52-4c8c75ed0af4.png)
- Go to Tools -> Board -> “Arduino/Genuino Uno”
+ Go to Tools -> Board -> “Arduino/Genuino Uno”.
 
-![image](https://user-images.githubusercontent.com/15716059/62595455-79de2c80-b8ac-11e9-9fd5-c7fb448c42e0.png) Go to Port -> Select port with Arduino/Genuino Uno
+![image](https://user-images.githubusercontent.com/15716059/62595455-79de2c80-b8ac-11e9-9fd5-c7fb448c42e0.png) Go to Port -> Select port with Arduino/Genuino Uno.
 
 Make changes if necessary, verify and upload the sketch.
 
-![image](https://user-images.githubusercontent.com/15716059/62595505-94180a80-b8ac-11e9-9751-4e20e3ff3a70.png) Open serial monitor and set baud rate to 9600
+![image](https://user-images.githubusercontent.com/15716059/62595505-94180a80-b8ac-11e9-9751-4e20e3ff3a70.png) Open serial monitor and set baud rate to 9600.
