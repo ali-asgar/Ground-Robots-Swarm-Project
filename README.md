@@ -6,7 +6,6 @@ NOTE: Whenever connecting the Roboclaw, it is necessary to give the serial port 
 `sudo chmod 666 /dev/ttyUSB0 /dev/ttyACM0`
 
 ## Setting up prerequisites
-
 Clone this repository to your **/Documents/Arduino/libraries** folder
 
 ### Hardware Requirements 
@@ -44,13 +43,13 @@ Instead 12 AWG Copper Wires are soldered on the Motors.
 ![image](https://user-images.githubusercontent.com/15716059/62594156-74caae80-b8a7-11e9-970b-f818676db11b.png)
 
 ## Roboclaw Motor Controller
-
 A [Motor Controller](https://www.robotshop.com/community/tutorials/show/basics-what-is-a-motor-controller) is a device that acts as intermediary between your robot’s microcontroller, batteries and motors. A motor controller is necessary because a microcontroller can usually only provide roughly 0.1 Amps of current whereas most actuators (DC motors, DC gear motors, servo motors etc.) require several Amps.
 
 A [motor controller](https://en.wikipedia.org/wiki/Motor_controller) might include a manual or automatic means for starting and stopping the motor, selecting forward or reverse rotation, selecting and regulating the speed, regulating or limiting the torque, and protecting against overloads and faults.
 
 RoboClaw is the name of the motor controller series made by [BasicMicro](http://www.basicmicro.com/). The Model which we are using is RoboClaw ST 2x45A Motor Controller.
 
-
+### Setup
+Connect the RoboClaw ST 2x45A with the computer (Windows) with USB to micro USB cable. From the power supply give 12V DC at the positive and negative terminal of the RoboClaw ST 2x45A. You will see the board in the attached devices section.
 
 - Packet Serial Mode - It can transmit and receive serial data, UART
