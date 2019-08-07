@@ -56,9 +56,7 @@ Connect the RoboClaw ST 2x45A with the computer (Windows) with USB to micro USB 
 
 ![image](https://user-images.githubusercontent.com/15716059/62594839-0cc99780-b8aa-11e9-8fb5-e19b41539b4b.png)
 
-![image](https://user-images.githubusercontent.com/15716059/62594861-1eab3a80-b8aa-11e9-906b-fc244374243b.png) 
-
-Click on Connect Selected Unit.
+![image](https://user-images.githubusercontent.com/15716059/62594861-1eab3a80-b8aa-11e9-906b-fc244374243b.png) Click on Connect Selected Unit.
 
 ![image](https://user-images.githubusercontent.com/15716059/62594955-7f3a7780-b8aa-11e9-9066-814680bef03e.png) 
 
@@ -105,6 +103,6 @@ Make changes if necessary, verify and upload the sketch.
 
 ![image](https://user-images.githubusercontent.com/15716059/62595505-94180a80-b8ac-11e9-9751-4e20e3ff3a70.png) Open serial monitor and set baud rate to 9600.
 
-## The Exmaple codes
+## The Example codes
 
 
