@@ -1,10 +1,6 @@
 # Ground-Robots-Swarm-Project
 The Ground-Robots-Swarm-Project repository contains source code for connecting your Arduino Uno with the RoboClaw ST 2x45A Motor Controller and Prowler robot for motion planning. The repository makes use of Roboclaw Library for Arduino.
 
-NOTE: Whenever connecting the Roboclaw, it is necessary to give the serial port adapter files read and write permissions.
-
-`sudo chmod 666 /dev/ttyUSB0 /dev/ttyACM0`
-
 ## Setting up prerequisites
 Clone this repository to your **/Documents/Arduino/libraries** folder.
 
@@ -106,14 +102,14 @@ Make changes if necessary, verify and upload the sketch.
 **Important information regarding encoder values**
 
 When the tire completes 1 rotation, we see this value on the software.
-- Countable Events Per Revolution (Output Shaft) - 1,288.848
 
+`Countable Events Per Revolution (Output Shaft) - 1,288.848`
 When the tire completes 1 rotation, the encoder rotates these many times.
-- Encoder: Cycles Per Revolution (Output Shaft) - 322.212
 
+`Encoder: Cycles Per Revolution (Output Shaft) - 322.212`
 Therefore, 1 cycle of Encoder = 4 Events on software
-- 322.212 cycles of Encoder = (322.212 x 4) = 1288.848 ≈ 1288 Events on software
 
+`322.212 cycles of Encoder = (322.212 x 4) = 1288.848 ≈ 1288 Events on software`
 The circumference of tire = Pi x Tire Diameter = 3.14 x 5.4 inch = 16.956 inches ≈ 17 inches.
 
 `Therefore, 17 inches = 1288 events`
