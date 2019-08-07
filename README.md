@@ -73,7 +73,7 @@ In the Studio, go to General Settings, and change the following:
 
 Go to file and save it.
 
-Change the mode to Packet Serial on Roboclaw:
+### Change the mode to Packet Serial on Roboclaw:
 
 - Function: Packet Serial     Mode - Address 0x80				Mode: 7
 - Description: It can transmit and receive serial data, UART
