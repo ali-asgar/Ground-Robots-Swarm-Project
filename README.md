@@ -186,7 +186,6 @@ void setup() {
     
     roboclaw.SetM2VelocityPID(address,Kd2,Kp2,Ki2,qpps);
 }
-
 ```
 
 Several motor and quadrature combinations can be used with RoboClaw. In some cases the default PID values will need to be tuned for the systems being driven. This gives greater flexibility in what motor and encoder combinations can be used. The RoboClaw PID system consist of four constants starting with QPPS, P = Proportional, I= Integral and D= Derivative.
@@ -194,7 +193,6 @@ Several motor and quadrature combinations can be used with RoboClaw. In some cas
 4. [What is the formula to calculate the Arc length?](https://sites.google.com/site/ev3basic/ev3-basic-programming/going-further/writerbot-v1/drawing-arcs) Formula explanation is in the link.
 ```
     // Finding the speeds of the of Motor M1 and Motor M2 using ratios
-    
     ratio = (2*radius - w)/(2*radius + w);
     
     //Serial.println(ratio,DEC);
