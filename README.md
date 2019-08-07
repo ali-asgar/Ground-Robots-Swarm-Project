@@ -36,7 +36,8 @@ Clone this repository to your **/Documents/Arduino/libraries** folder
 - Roboclaw 2B  		to  		Motor 1 Channel B
 - Roboclaw Gnd  	to  		Motor 1 Gnd
 
-Packet Serial Mode - It can transmit and receive serial data, UART. 
+Packet Serial Mode - It can transmit and receive serial data, UART.
+
 The Motor + and Motor - pins of the 6-pin JST connector are not used because the wires are not thick enough. 
 Instead 12 AWG Copper Wires are soldered on the Motors.
 
@@ -56,11 +57,11 @@ RoboClaw is the name of the motor controller series made by [BasicMicro](http://
 Connect the RoboClaw ST 2x45A with the computer (Windows) with USB to micro USB cable. From the power supply give 12V DC at the positive and negative terminal of the RoboClaw ST 2x45A. You will see the board in the attached devices section.
 
 ![image](https://user-images.githubusercontent.com/15716059/62594839-0cc99780-b8aa-11e9-8fb5-e19b41539b4b.png)
-Click on Connect Selected Unit.
 
-![image](https://user-images.githubusercontent.com/15716059/62594861-1eab3a80-b8aa-11e9-906b-fc244374243b.png)
+![image](https://user-images.githubusercontent.com/15716059/62594861-1eab3a80-b8aa-11e9-906b-fc244374243b.png) Click on Connect Selected Unit.
 
-The RoboClaw ST 2x45A gets connected to the BasicMicro Motion Studio.
+![image](https://user-images.githubusercontent.com/15716059/62594955-7f3a7780-b8aa-11e9-9066-814680bef03e.png) The RoboClaw ST 2x45A gets connected to the BasicMicro Motion Studio.
+
 We can see that all the parameter are GREEN in color which means everything is good. We can also see the current temperature, encoder, speed, battery level and version in the top section.
 We can also see different settings such as General, PWM, velocity and Position settings on the left side.
 
@@ -75,6 +76,8 @@ Go to file and save it.
 Change the mode to Packet Serial on Roboclaw:
 
 The 3 buttons on RoboClaw are used to set the different configuration options. The MODE button sets the interface method such as Serial or RC modes. The SET button is used to configure the options for the mode. The LIPO button doubles as a save button and configuring the low battery voltage cut out function of RoboClaw. To set the desired mode follow the steps below. 
+
+![image](https://user-images.githubusercontent.com/15716059/62595001-95e0ce80-b8aa-11e9-94c4-09566fadb32c.png)
 
 1. Press and release the MODE button to enter mode setup. The STAT2 LED will begin to blink out the current mode. Each blink is a half second with a long pause at the end of the count. Five blinks with a long pause equals mode 5 and so on. 
 2. Press SET to increment to the next mode. Press MODE to decrement to the previous mode. 
