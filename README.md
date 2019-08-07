@@ -124,7 +124,7 @@ Program 0 a.k.a. testrobot.ino is the template code which can be used for all ty
 
 1. Understanding how to determine PID values.
 
-`
+```
 //Step 3a: Initialize Velocity PID coefficients for Motor 1
 
 #define Kp1 1.0
@@ -142,7 +142,7 @@ Program 0 a.k.a. testrobot.ino is the template code which can be used for all ty
 #define Ki2 1.0
 
 #define Kd2 1.0
-`
+```
 
 The Kp, Ki, and Kd values were determined by changing the values of PID values of motors M1 and M2. Initially the Prowler rover would not move in the straight line. There was a difference of 50 encoder ticks in the speed.
 
@@ -169,7 +169,7 @@ When a request for data is made to RoboClaw the return data will have at least a
 
 **9600 is below 38400 TO ENSURE DATA INTEGRITY.**
 
-`
+```
 void setup() {
     
     //Step 4: Open Serial and roboclaw serial ports
@@ -186,12 +186,13 @@ void setup() {
     
     roboclaw.SetM2VelocityPID(address,Kd2,Kp2,Ki2,qpps);
 }
-`
+
+```
 
 Several motor and quadrature combinations can be used with RoboClaw. In some cases the default PID values will need to be tuned for the systems being driven. This gives greater flexibility in what motor and encoder combinations can be used. The RoboClaw PID system consist of four constants starting with QPPS, P = Proportional, I= Integral and D= Derivative.
 
 4. [What is the formula to calculate the Arc length?](https://sites.google.com/site/ev3basic/ev3-basic-programming/going-further/writerbot-v1/drawing-arcs) Formula explanation is in the link.
-`
+```
     // Finding the speeds of the of Motor M1 and Motor M2 using ratios
     
     ratio = (2*radius - w)/(2*radius + w);
@@ -201,7 +202,7 @@ Several motor and quadrature combinations can be used with RoboClaw. In some cas
     s1 = round(s2 / ratio);
     
     //Serial.println(s2,DEC);
-`
+```
 
 5. Why is the distance used throughout the code even if the robot move straight or makes a turn or rotates?
 
