@@ -28,10 +28,7 @@ Clone this repository to your **/Documents/Arduino/libraries** folder
 
 ### Connections
 Arduino Uno, RoboClaw ST 2x45A and Motor 1 & 2 connections
-- Packet Serial Mode - It can transmit and receive serial data, UART
-
 ![image](https://user-images.githubusercontent.com/15716059/62593867-67f98b00-b8a6-11e9-9adc-798383b5d7e1.png)
-
 - Motor 2 Gnd  		to  		Arduino Digital Pin Gnd
 - Roboclaw Gnd  	to  		Arduino Digital Pin Gnd
 - Roboclaw S2  		to  		Arduino Digital Pin 10
@@ -45,6 +42,8 @@ Arduino Uno, RoboClaw ST 2x45A and Motor 1 & 2 connections
 - Roboclaw Gnd  	to  		Motor 1 Gnd
 
 The Motor + and Motor - pins of the 6-pin JST connector are not used. Instead 12 AWG Copper Wires are soldered on the Motors.
+![image](https://user-images.githubusercontent.com/15716059/62594138-69778300-b8a7-11e9-8752-95d427e8405d.png)
+![image](https://user-images.githubusercontent.com/15716059/62594156-74caae80-b8a7-11e9-970b-f818676db11b.png)
 
 ## Roboclaw
-
+- Packet Serial Mode - It can transmit and receive serial data, UART
