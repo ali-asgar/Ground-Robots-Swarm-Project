@@ -10,4 +10,6 @@ NOTE: Whenever connecting the Roboclaw, it is necessary to give the serial port 
 
 ## Setting up prerequisites
 
+Clone this repository to your /Documents/Arduino/libraries folder
+
 This is the video tutorial with assembly instructions for the [Prowler Robot.](https://www.youtube.com/watch?v=k7ZXSDlREJM)
