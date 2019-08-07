@@ -126,13 +126,21 @@ Program 0 a.k.a. testrobot.ino is the template code which can be used for all ty
 
 `
 //Step 3a: Initialize Velocity PID coefficients for Motor 1
+
 #define Kp1 1.0
+
 #define Ki1 0.0
+
 #define Kd1 0.5
+
 #define qpps 44000
+
 //Step 3b: Initialize Velocity PID coefficients for Motor 2
+
 #define Kp2 5000.0
+
 #define Ki2 1.0
+
 #define Kd2 1.0
 `
 
@@ -163,13 +171,19 @@ When a request for data is made to RoboClaw the return data will have at least a
 
 `
 void setup() {
+    
     //Step 4: Open Serial and roboclaw serial ports
+    
     Serial.begin(9600);       
+    
     roboclaw.begin(9600);
+    
     //Adjust the same on board using Basicmicro motion studio (See Above)
     
     //Step 5: Set PID Coefficients
+    
     roboclaw.SetM1VelocityPID(address,Kd1,Kp1,Ki1,qpps);
+    
     roboclaw.SetM2VelocityPID(address,Kd2,Kp2,Ki2,qpps);
 }
 `
@@ -179,9 +193,13 @@ Several motor and quadrature combinations can be used with RoboClaw. In some cas
 4. [What is the formula to calculate the Arc length?](https://sites.google.com/site/ev3basic/ev3-basic-programming/going-further/writerbot-v1/drawing-arcs) Formula explanation is in the link.
 `
     // Finding the speeds of the of Motor M1 and Motor M2 using ratios
+    
     ratio = (2*radius - w)/(2*radius + w);
+    
     //Serial.println(ratio,DEC);
+    
     s1 = round(s2 / ratio);
+    
     //Serial.println(s2,DEC);
 `
 
