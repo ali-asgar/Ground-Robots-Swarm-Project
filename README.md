@@ -103,8 +103,6 @@ Make changes if necessary, verify and upload the sketch.
 
 ![image](https://user-images.githubusercontent.com/15716059/62595505-94180a80-b8ac-11e9-9751-4e20e3ff3a70.png) Open serial monitor and set baud rate to 9600.
 
-## Understanding The Test Code
-
 **Important information regarding encoder values**
 
 When the tire completes 1 rotation, we see this value on the software.
@@ -117,6 +115,74 @@ Therefore, 1 cycle of Encoder = 4 Events on software
 - 322.212 cycles of Encoder = (322.212 x 4) = 1288.848 ≈ 1288 Events on software
 
 The circumference of tire = Pi x Tire Diameter = 3.14 x 5.4 inch = 16.956 inches ≈ 17 inches.
+
 `Therefore, 17 inches = 1288 events`
 
+## Understanding The Test Code
+
+Program 0 a.k.a. testrobot.ino is the template code which can be used for all types for codes.
+
+1. Understanding how to determine PID values.
+
+`//Step 3a: Initialize Velocity PID coefficients for Motor 1
+#define Kp1 1.0
+#define Ki1 0.0
+#define Kd1 0.5
+#define qpps 44000
+//Step 3b: Initialize Velocity PID coefficients for Motor 2
+#define Kp2 5000.0
+#define Ki2 1.0
+#define Kd2 1.0`
+
+The Kp, Ki, and Kd values were determined by changing the values of PID values of motors M1 and M2. Initially the Prowler rover would not move in the straight line. There was a difference of 50 encoder ticks in the speed.
+
+By changing the values of the Kp, Ki, and Kd values and changing the speeds of M1 = 24 and M2 = 25, we The prowler rover was able to move in a straight line.
+
+Also, since the motors can rotate at very high speeds, please maintain the speeds M1 = 24 and M2 = 25 as the maximum speeds of the motors.
+
+2. [What is #define qpps 44000 ](http://philglau.com/arduino-code-for-determining-qpps-setting-for-roboclaw-motor-controller/)
+
+QPPS is the speed of the encoder when the motor is at 100% power. P, I, D are the default values used after a reset.
+QPPS stands for “quadrature pulses per second” and is used in the motor controller for establish the maximum speed the motor can be driven at and is also used in the calculation of all the speed, distance, and position commands that are part of the Arduino Library.
+
+In the basicmicro motion studio, when QPPS is value is small, the number of divisons are less and hence huge differences between speed ratios.
+
+For example, if QPPS is 2, then it will show the following - 
+Speed = 0 from 0% upto 50% and 
+Speed = MAX from 51% upto 100% 
+
+For QPPS = 44000, the speed will be more accurate.
+
+3. In Packet Serial Mode
+
+When a request for data is made to RoboClaw the return data will have at least a 1ms delay after the command is received if the **baud rate** is set at or below 38400. This will allow slower processors and processors without UARTs to communicate with RoboClaw. This is roboclaw.begin();
+
+**9600 is below 38400 TO ENSURE DATA INTEGRITY.**
+
+`void setup() {
+    //Step 4: Open Serial and roboclaw serial ports
+    Serial.begin(9600);       
+    roboclaw.begin(9600);
+    //Adjust the same on board using Basicmicro motion studio (See Above)
+    
+    //Step 5: Set PID Coefficients
+    roboclaw.SetM1VelocityPID(address,Kd1,Kp1,Ki1,qpps);
+    roboclaw.SetM2VelocityPID(address,Kd2,Kp2,Ki2,qpps);
+}`
+
+Several motor and quadrature combinations can be used with RoboClaw. In some cases the default PID values will need to be tuned for the systems being driven. This gives greater flexibility in what motor and encoder combinations can be used. The RoboClaw PID system consist of four constants starting with QPPS, P = Proportional, I= Integral and D= Derivative.
+
+4. [What is the formula to calculate the Arc length?](https://sites.google.com/site/ev3basic/ev3-basic-programming/going-further/writerbot-v1/drawing-arcs) Formula explanation is in the link.
+`
+    // Finding the speeds of the of Motor M1 and Motor M2 using ratios
+    ratio = (2*radius - w)/(2*radius + w);
+    //Serial.println(ratio,DEC);
+    s1 = round(s2 / ratio);
+    //Serial.println(s2,DEC);`
+
+5. Why is the distance used throughout the code even if the robot move straight or makes a turn or rotates?
+
+The ‘distance’ variable is used to calculate the encoder value (or events / ticks) of the entire distance. To make sure the current encoder value matches the conditions we use the ‘distance’ variable to compare if the movement is completed or not.
+
+Since the variable distance is just the magnitude, to get the exact encoder value we multiply it with particular value to get the exact distance in inches, feet or meter.
 
