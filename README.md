@@ -3,7 +3,7 @@ The Ground-Robots-Swarm-Project repository contains source code for connecting y
 
 NOTE: Whenever connecting the Roboclaw, it is necessary to give the serial port adapter files read and write permissions.
 
-'sudo chmod 666 /dev/ttyUSB0 /dev/ttyACM0'
+`sudo chmod 666 /dev/ttyUSB0 /dev/ttyACM0`
 
 ## Setting up prerequisites
 
