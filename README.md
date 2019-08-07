@@ -8,6 +8,6 @@ NOTE: Whenever connecting the Roboclaw, it is necessary to give the serial port 
 
 'sudo chmod 666 /dev/ttyUSB0 /dev/ttyACM0'
 
-### Setting up prerequisites
+## Setting up prerequisites
 
 This is the video tutorial with assembly instructions for the [Prowler Robot.](https://www.youtube.com/watch?v=k7ZXSDlREJM)
