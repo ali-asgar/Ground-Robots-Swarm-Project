@@ -103,9 +103,9 @@ Make changes if necessary, verify and upload the sketch.
 
 ![image](https://user-images.githubusercontent.com/15716059/62595505-94180a80-b8ac-11e9-9751-4e20e3ff3a70.png) Open serial monitor and set baud rate to 9600.
 
-## The Example codes
+## Understanding The Test Code
 
-**Required Information - Encoder values**
+**Important information regarding encoder values**
 
 When the tire completes 1 rotation, we see this value on the software.
 - Countable Events Per Revolution (Output Shaft) - 1,288.848
@@ -117,5 +117,6 @@ Therefore, 1 cycle of Encoder = 4 Events on software
 - 322.212 cycles of Encoder = (322.212 x 4) = 1288.848 ≈ 1288 Events on software
 
 The circumference of tire = Pi x Tire Diameter = 3.14 x 5.4 inch = 16.956 inches ≈ 17 inches.
+`Therefore, 17 inches = 1288 events`
 
-**Therefore, 17 inches = 1288 events**
+
