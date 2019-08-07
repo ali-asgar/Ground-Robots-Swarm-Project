@@ -181,9 +181,7 @@ void setup() {
     //Adjust the same on board using Basicmicro motion studio (See Above)
     
     //Step 5: Set PID Coefficients
-    
     roboclaw.SetM1VelocityPID(address,Kd1,Kp1,Ki1,qpps);
-    
     roboclaw.SetM2VelocityPID(address,Kd2,Kp2,Ki2,qpps);
 }
 ```
@@ -194,11 +192,8 @@ Several motor and quadrature combinations can be used with RoboClaw. In some cas
 ```
     // Finding the speeds of the of Motor M1 and Motor M2 using ratios
     ratio = (2*radius - w)/(2*radius + w);
-    
     //Serial.println(ratio,DEC);
-    
     s1 = round(s2 / ratio);
-    
     //Serial.println(s2,DEC);
 ```
 
