@@ -36,8 +36,6 @@ Clone this repository to your **/Documents/Arduino/libraries** folder
 - Roboclaw 2B  		to  		Motor 1 Channel B
 - Roboclaw Gnd  	to  		Motor 1 Gnd
 
-Packet Serial Mode - It can transmit and receive serial data, UART.
-
 The Motor + and Motor - pins of the 6-pin JST connector are not used because the wires are not thick enough. 
 Instead 12 AWG Copper Wires are soldered on the Motors.
 
@@ -60,7 +58,9 @@ Connect the RoboClaw ST 2x45A with the computer (Windows) with USB to micro USB 
 
 ![image](https://user-images.githubusercontent.com/15716059/62594861-1eab3a80-b8aa-11e9-906b-fc244374243b.png) Click on Connect Selected Unit.
 
-![image](https://user-images.githubusercontent.com/15716059/62594955-7f3a7780-b8aa-11e9-9066-814680bef03e.png) The RoboClaw ST 2x45A gets connected to the BasicMicro Motion Studio.
+![image](https://user-images.githubusercontent.com/15716059/62594955-7f3a7780-b8aa-11e9-9066-814680bef03e.png) 
+
+The RoboClaw ST 2x45A gets connected to the BasicMicro Motion Studio.
 
 We can see that all the parameter are GREEN in color which means everything is good. We can also see the current temperature, encoder, speed, battery level and version in the top section.
 We can also see different settings such as General, PWM, velocity and Position settings on the left side.
@@ -83,5 +83,8 @@ The 3 buttons on RoboClaw are used to set the different configuration options. T
 2. Press SET to increment to the next mode. Press MODE to decrement to the previous mode. 
 3. Press and release the LIPO button to save this mode to memory.
 
-
+Description:
+Function: Packet Serial Mode - Address 0x80				Mode: 7
+Description: Control using packet serial mode with a specific address for networking several motor controllers together.
+Packet Serial Mode - It can transmit and receive serial data, UART.
 
