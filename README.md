@@ -2,7 +2,6 @@
 The Ground-Robots-Swarm-Project repository contains source code for connecting your Arduino Uno with the RoboClaw ST 2x45A Motor Controller and Prowler robot for motion planning. The repository makes use of Roboclaw Library for Arduino.
 
 NOTE: Whenever connecting the Roboclaw, it is necessary to give the serial port adapter files read and write permissions.
-
 `sudo chmod 666 /dev/ttyUSB0 /dev/ttyACM0`
 
 ## Setting up prerequisites
@@ -38,7 +37,6 @@ Clone this repository to your **/Documents/Arduino/libraries** folder
 - Roboclaw Gnd  	to  		Motor 1 Gnd
 
 The Motor + and Motor - pins of the 6-pin JST connector are not used.
-
 Instead 12 AWG Copper Wires are soldered on the Motors.
 
 ![image](https://user-images.githubusercontent.com/15716059/62594138-69778300-b8a7-11e9-8752-95d427e8405d.png)
