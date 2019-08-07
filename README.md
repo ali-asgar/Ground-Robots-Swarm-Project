@@ -24,6 +24,8 @@ Clone this repository to your **/Documents/Arduino/libraries** folder.
 
 ### Connections - Arduino Uno, RoboClaw ST 2x45A and Motor 1 & 2 connections
 ![image](https://user-images.githubusercontent.com/15716059/62593867-67f98b00-b8a6-11e9-9adc-798383b5d7e1.png)
+![image](https://user-images.githubusercontent.com/15716059/62594138-69778300-b8a7-11e9-8752-95d427e8405d.png)
+![image](https://user-images.githubusercontent.com/15716059/62594156-74caae80-b8a7-11e9-970b-f818676db11b.png)
 - Motor 2 Gnd  		to  		Arduino Digital Pin Gnd
 - Roboclaw Gnd  	to  		Arduino Digital Pin Gnd
 - Roboclaw S2  		to  		Arduino Digital Pin 10
@@ -39,8 +41,7 @@ Clone this repository to your **/Documents/Arduino/libraries** folder.
 The Motor + and Motor - pins of the 6-pin JST connector are not used because the wires are not thick enough. 
 Instead 12 AWG Copper Wires are soldered on the Motors.
 
-![image](https://user-images.githubusercontent.com/15716059/62594138-69778300-b8a7-11e9-8752-95d427e8405d.png)
-![image](https://user-images.githubusercontent.com/15716059/62594156-74caae80-b8a7-11e9-970b-f818676db11b.png)
+
 
 ## Roboclaw Motor Controller
 A [Motor Controller](https://www.robotshop.com/community/tutorials/show/basics-what-is-a-motor-controller) is a device that acts as intermediary between your robot’s microcontroller, batteries and motors. A motor controller is necessary because a microcontroller can usually only provide roughly 0.1 Amps of current whereas most actuators (DC motors, DC gear motors, servo motors etc.) require several Amps.
