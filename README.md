@@ -67,14 +67,13 @@ We can also see different settings such as General, PWM, velocity and Position s
 
 In the Studio, go to General Settings, and change the following:
 ```
--	Control Mode: Packet Serial
--	PWM Mode: Locked Antiphase
--	Serial, Baudrate: 9600
+Control Mode: Packet Serial
+PWM Mode: Locked Antiphase
+Serial, Baudrate: 9600
 ```
 Go to file and save it.
 
 ### Change the mode to Packet Serial on Roboclaw:
-
 - Function: Packet Serial     Mode - Address 0x80				Mode: 7
 - Description: It can transmit and receive serial data, UART
 
@@ -87,7 +86,6 @@ The 3 buttons on RoboClaw are used to set the different configuration options. T
 3. Press and release the LIPO button to save this mode to memory.
 
 ### Instructions for Arduino Uno
-
 -	Clone this repository to your **/Documents/Arduino/libraries** folder. 
 - Also, you can download this repository, unzip the file and copy it in /Documents/Arduino/libraries folder.
 -	Start Arduino IDE (Restart Arduino IDE if already open.)
@@ -104,3 +102,7 @@ The 3 buttons on RoboClaw are used to set the different configuration options. T
 Make changes if necessary, verify and upload the sketch.
 
 ![image](https://user-images.githubusercontent.com/15716059/62595505-94180a80-b8ac-11e9-9751-4e20e3ff3a70.png) Open serial monitor and set baud rate to 9600.
+
+## The Exmaple codes
+
+
