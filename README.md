@@ -123,27 +123,18 @@ The circumference of tire = Pi x Tire Diameter = 3.14 x 5.4 inch = 16.956 inches
 Program 0 a.k.a. testrobot.ino is the template code which can be used for all types for codes.
 
 1. Understanding how to determine PID values.
-
 ```
 //Step 3a: Initialize Velocity PID coefficients for Motor 1
-
 #define Kp1 1.0
-
 #define Ki1 0.0
-
 #define Kd1 0.5
-
 #define qpps 44000
 
 //Step 3b: Initialize Velocity PID coefficients for Motor 2
-
 #define Kp2 5000.0
-
 #define Ki2 1.0
-
 #define Kd2 1.0
 ```
-
 The Kp, Ki, and Kd values were determined by changing the values of PID values of motors M1 and M2. Initially the Prowler rover would not move in the straight line. There was a difference of 50 encoder ticks in the speed.
 
 By changing the values of the Kp, Ki, and Kd values and changing the speeds of M1 = 24 and M2 = 25, we The prowler rover was able to move in a straight line.
@@ -168,16 +159,11 @@ For QPPS = 44000, the speed will be more accurate.
 When a request for data is made to RoboClaw the return data will have at least a 1ms delay after the command is received if the **baud rate** is set at or below 38400. This will allow slower processors and processors without UARTs to communicate with RoboClaw. This is roboclaw.begin();
 
 **9600 is below 38400 TO ENSURE DATA INTEGRITY.**
-
 ```
 void setup() {
-    
     //Step 4: Open Serial and roboclaw serial ports
-    
     Serial.begin(9600);       
-    
     roboclaw.begin(9600);
-    
     //Adjust the same on board using Basicmicro motion studio (See Above)
     
     //Step 5: Set PID Coefficients
@@ -185,7 +171,6 @@ void setup() {
     roboclaw.SetM2VelocityPID(address,Kd2,Kp2,Ki2,qpps);
 }
 ```
-
 Several motor and quadrature combinations can be used with RoboClaw. In some cases the default PID values will need to be tuned for the systems being driven. This gives greater flexibility in what motor and encoder combinations can be used. The RoboClaw PID system consist of four constants starting with QPPS, P = Proportional, I= Integral and D= Derivative.
 
 4. [What is the formula to calculate the Arc length?](https://sites.google.com/site/ev3basic/ev3-basic-programming/going-further/writerbot-v1/drawing-arcs) Formula explanation is in the link.
