@@ -41,7 +41,9 @@ Arduino Uno, RoboClaw ST 2x45A and Motor 1 & 2 connections
 - Roboclaw 2B  		to  		Motor 1 Channel B
 - Roboclaw Gnd  	to  		Motor 1 Gnd
 
-The Motor + and Motor - pins of the 6-pin JST connector are not used. Instead 12 AWG Copper Wires are soldered on the Motors.
+The Motor + and Motor - pins of the 6-pin JST connector are not used. 
+Instead 12 AWG Copper Wires are soldered on the Motors.
+
 ![image](https://user-images.githubusercontent.com/15716059/62594138-69778300-b8a7-11e9-8752-95d427e8405d.png)
 ![image](https://user-images.githubusercontent.com/15716059/62594156-74caae80-b8a7-11e9-970b-f818676db11b.png)
 
