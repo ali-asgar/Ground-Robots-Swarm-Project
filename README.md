@@ -20,7 +20,7 @@ Clone this repository to your **/Documents/Arduino/libraries** folder
 - [12 AWG Copper Wire](https://www.amazon.com/gp/product/B01AQU3ST8)
 
 ### Software Requirements
-- [BasicMicro Motion Studio](http://downloads.basicmicro.com/software/BMStudio/setup.exe) for Windows.
+- [BasicMicro Motion Studio](http://downloads.basicmicro.com/software/BMStudio/setup.exe) The setup is in .exe format so it will only work on Windows OS.
 - [Arduino IDE](https://www.arduino.cc/en/main/software)
 
 ### Connections - Arduino Uno, RoboClaw ST 2x45A and Motor 1 & 2 connections
@@ -43,5 +43,14 @@ Instead 12 AWG Copper Wires are soldered on the Motors.
 ![image](https://user-images.githubusercontent.com/15716059/62594138-69778300-b8a7-11e9-8752-95d427e8405d.png)
 ![image](https://user-images.githubusercontent.com/15716059/62594156-74caae80-b8a7-11e9-970b-f818676db11b.png)
 
-## Roboclaw
+## Roboclaw Motor Controller
+
+A [Motor Controller](https://www.robotshop.com/community/tutorials/show/basics-what-is-a-motor-controller) is a device that acts as intermediary between your robot’s microcontroller, batteries and motors. A motor controller is necessary because a microcontroller can usually only provide roughly 0.1 Amps of current whereas most actuators (DC motors, DC gear motors, servo motors etc.) require several Amps.
+
+A [motor controller](https://en.wikipedia.org/wiki/Motor_controller) might include a manual or automatic means for starting and stopping the motor, selecting forward or reverse rotation, selecting and regulating the speed, regulating or limiting the torque, and protecting against overloads and faults.
+
+RoboClaw is the name of the motor controller series made by [BasicMicro](http://www.basicmicro.com/). The Model which we are using is RoboClaw ST 2x45A Motor Controller.
+
+
+
 - Packet Serial Mode - It can transmit and receive serial data, UART
