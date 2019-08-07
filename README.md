@@ -84,7 +84,7 @@ The 3 buttons on RoboClaw are used to set the different configuration options. T
 3. Press and release the LIPO button to save this mode to memory.
 
 Description:
-Function: Packet Serial Mode - Address 0x80				Mode: 7
-Description: Control using packet serial mode with a specific address for networking several motor controllers together.
-Packet Serial Mode - It can transmit and receive serial data, UART.
+- Function: Packet Serial Mode - Address 0x80				Mode: 7
+- Description: Control using packet serial mode with a specific address for networking several motor controllers together.
+- Packet Serial Mode - It can transmit and receive serial data, UART.
 
