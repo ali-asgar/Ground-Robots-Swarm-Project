@@ -66,11 +66,11 @@ We can see that all the parameter are GREEN in color which means everything is g
 We can also see different settings such as General, PWM, velocity and Position settings on the left side.
 
 In the Studio, go to General Settings, and change the following:
-
+```
 -	Control Mode: Packet Serial
 -	PWM Mode: Locked Antiphase
 -	Serial, Baudrate: 9600
-
+```
 Go to file and save it.
 
 ### Change the mode to Packet Serial on Roboclaw:
