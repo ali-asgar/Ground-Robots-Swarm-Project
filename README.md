@@ -54,7 +54,11 @@ RoboClaw is the name of the motor controller series made by [BasicMicro](http://
 ### Setup
 Connect the RoboClaw ST 2x45A with the computer (Windows) with USB to micro USB cable. From the power supply give 12V DC at the positive and negative terminal of the RoboClaw ST 2x45A. You will see the board in the attached devices section.
 
-![image](https://user-images.githubusercontent.com/15716059/62594839-0cc99780-b8aa-11e9-8fb5-e19b41539b4b.png) ![image](https://user-images.githubusercontent.com/15716059/62594861-1eab3a80-b8aa-11e9-906b-fc244374243b.png) Click on Connect Selected Unit.
+![image](https://user-images.githubusercontent.com/15716059/62594839-0cc99780-b8aa-11e9-8fb5-e19b41539b4b.png)
+
+![image](https://user-images.githubusercontent.com/15716059/62594861-1eab3a80-b8aa-11e9-906b-fc244374243b.png) 
+
+Click on Connect Selected Unit.
 
 ![image](https://user-images.githubusercontent.com/15716059/62594955-7f3a7780-b8aa-11e9-9066-814680bef03e.png) 
 
