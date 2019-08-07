@@ -124,7 +124,8 @@ Program 0 a.k.a. testrobot.ino is the template code which can be used for all ty
 
 1. Understanding how to determine PID values.
 
-`//Step 3a: Initialize Velocity PID coefficients for Motor 1
+`
+//Step 3a: Initialize Velocity PID coefficients for Motor 1
 #define Kp1 1.0
 #define Ki1 0.0
 #define Kd1 0.5
@@ -132,7 +133,8 @@ Program 0 a.k.a. testrobot.ino is the template code which can be used for all ty
 //Step 3b: Initialize Velocity PID coefficients for Motor 2
 #define Kp2 5000.0
 #define Ki2 1.0
-#define Kd2 1.0`
+#define Kd2 1.0
+`
 
 The Kp, Ki, and Kd values were determined by changing the values of PID values of motors M1 and M2. Initially the Prowler rover would not move in the straight line. There was a difference of 50 encoder ticks in the speed.
 
@@ -159,7 +161,8 @@ When a request for data is made to RoboClaw the return data will have at least a
 
 **9600 is below 38400 TO ENSURE DATA INTEGRITY.**
 
-`void setup() {
+`
+void setup() {
     //Step 4: Open Serial and roboclaw serial ports
     Serial.begin(9600);       
     roboclaw.begin(9600);
@@ -168,7 +171,8 @@ When a request for data is made to RoboClaw the return data will have at least a
     //Step 5: Set PID Coefficients
     roboclaw.SetM1VelocityPID(address,Kd1,Kp1,Ki1,qpps);
     roboclaw.SetM2VelocityPID(address,Kd2,Kp2,Ki2,qpps);
-}`
+}
+`
 
 Several motor and quadrature combinations can be used with RoboClaw. In some cases the default PID values will need to be tuned for the systems being driven. This gives greater flexibility in what motor and encoder combinations can be used. The RoboClaw PID system consist of four constants starting with QPPS, P = Proportional, I= Integral and D= Derivative.
 
@@ -178,7 +182,8 @@ Several motor and quadrature combinations can be used with RoboClaw. In some cas
     ratio = (2*radius - w)/(2*radius + w);
     //Serial.println(ratio,DEC);
     s1 = round(s2 / ratio);
-    //Serial.println(s2,DEC);`
+    //Serial.println(s2,DEC);
+`
 
 5. Why is the distance used throughout the code even if the robot move straight or makes a turn or rotates?
 
