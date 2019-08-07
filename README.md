@@ -101,7 +101,6 @@ The 3 buttons on RoboClaw are used to set the different configuration options. T
 
 ![image](https://user-images.githubusercontent.com/15716059/62595455-79de2c80-b8ac-11e9-9fd5-c7fb448c42e0.png) Go to Port -> Select port with Arduino/Genuino Uno
 
--	Make changes if necessary, verify and upload the sketch.
--	Open serial monitor and set baud rate to 9600
+Make changes if necessary, verify and upload the sketch.
 
-![image](https://user-images.githubusercontent.com/15716059/62595505-94180a80-b8ac-11e9-9751-4e20e3ff3a70.png)
+![image](https://user-images.githubusercontent.com/15716059/62595505-94180a80-b8ac-11e9-9751-4e20e3ff3a70.png) Open serial monitor and set baud rate to 9600
