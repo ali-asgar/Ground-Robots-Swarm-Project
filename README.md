@@ -93,7 +93,7 @@ The 3 buttons on RoboClaw are used to set the different configuration options. T
 2. Press SET to increment to the next mode. Press MODE to decrement to the previous mode. 
 3. Press and release the LIPO button to save this mode to memory.
 
-### Instructions for Arduino Uno
+## Instructions for Arduino Uno
 -	Clone this repository to your **/Documents/Arduino/libraries** folder. 
 
 `$ git clone https://github.com/ali-asgar/Ground-Robots-Swarm-Project.git`
