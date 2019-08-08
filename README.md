@@ -13,7 +13,7 @@ The Ground-Robots-Swarm-Project repository contains source code for connecting y
 8. **MovewithSLAM**        ( Rover moves in all direction using the keyboard and encoder values are sent for Simultaneous localization and mapping serially )
 9. **MoveForwardAndBack**  ( Rover moves in makes a 360° rotation, moves forward, turns and moves backward )
 
-**rover-photos** folder contains the photos of the ground photos
+**rover-photos** folder contains the photos of the ground rovers.
 ## Setting up prerequisites
 Clone this repository to your **/Documents/Arduino/libraries** folder.
 
