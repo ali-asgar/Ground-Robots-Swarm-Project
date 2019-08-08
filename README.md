@@ -95,6 +95,8 @@ The 3 buttons on RoboClaw are used to set the different configuration options. T
 
 ### Instructions for Arduino Uno
 -	Clone this repository to your **/Documents/Arduino/libraries** folder. 
+
+`$ git clone https://github.com/ali-asgar/Ground-Robots-Swarm-Project.git`
 - Also, you can download this repository, unzip the file and copy it in /Documents/Arduino/libraries folder.
 -	Start Arduino IDE (Restart Arduino IDE if already open.)
 -	Connect Arduino Uno with computer (or Raspberry Pi if you are using it.)
