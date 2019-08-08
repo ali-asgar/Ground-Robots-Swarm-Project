@@ -1,6 +1,18 @@
 # Ground-Robots-Swarm-Project
 The Ground-Robots-Swarm-Project repository contains source code for connecting your Arduino Uno with the RoboClaw ST 2x45A Motor Controller and Prowler robot for motion planning. The repository makes use of Roboclaw Library for Arduino.
 
+This repository contains 10 rover programs in the **examples** folder.
+- MoveAllDirections
+- MoveForwardAndBack
+- MoveForwardAndStop
+- MoveInCircle
+- MoveInHeartShape
+- MoveInOctagon
+- MoveInSquare
+- MoveToASpot
+- MovewithSLAM
+- testrobot
+
 ## Setting up prerequisites
 Clone this repository to your **/Documents/Arduino/libraries** folder.
 
