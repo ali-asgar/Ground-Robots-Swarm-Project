@@ -20,6 +20,6 @@
 
 ![image](https://user-images.githubusercontent.com/15716059/62709638-be102080-b9c3-11e9-827d-8487d40cff5b.png)
 
-# Work in Progress
+# Extra photos - While working on the project
 
 ![image](https://user-images.githubusercontent.com/15716059/62709929-5d351800-b9c4-11e9-8b46-32c520e13030.png)
