@@ -13,6 +13,7 @@ The Ground-Robots-Swarm-Project repository contains source code for connecting y
 - MovewithSLAM
 - testrobot
 
+**rover-photos folder contains the photos of the ground photos**
 ## Setting up prerequisites
 Clone this repository to your **/Documents/Arduino/libraries** folder.
 
